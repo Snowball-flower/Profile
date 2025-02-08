@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: #ce3737;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
+    margin: auto;
+    padding: auto;
+}
+
+.name{
+    font-size: 15px;
+    color:rgb(249, 238, 225); 
+    text-align: left;
+    margin-left: 1%;
+    margin-bottom: 10px;
+} 
+
+.deta{
+    display: flex;
+    flex-direction: rows;
+    gap: 30px;
+    margin-right: 1%;
+}
+
+.exp,.skill,.work{
+    font-weight: bold;
+    font-size: 20px;
+    height: 20%;
+    color:rgb(249, 238, 225); 
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin-bottom: 10px;
+  
+
+}
