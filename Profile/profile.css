@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; /* 禁止左右滾動 */
 }
 
 .nav{
@@ -16,11 +17,21 @@
     padding: auto;
 }
 
+.top{
+    height: 100vh;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap:5% ;
+}
+
 .name{
     font-size: 15px;
     color:rgb(249, 238, 225); 
     text-align: left;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-bottom: 10px;
 } 
 
@@ -28,18 +39,166 @@
     display: flex;
     flex-direction: rows;
     gap: 30px;
-    margin-right: 1%;
+    margin-right: 5%;
 }
 
-.exp,.skill,.work{
+
+.exp,.work{
     font-weight: bold;
-    font-size: 20px;
-    height: 20%;
+    background-color: #ce3737;
     color:rgb(249, 238, 225); 
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     text-align: right;
     margin-bottom: 10px;
-  
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+.exp:hover,.work:hover{
+    background-color: rgb(198, 168, 181);
+    color: aliceblue;
+    border-radius: 40px;
 
 }
+
+.exp::before, .work::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.pic{
+    width: 400px; 
+    height: auto; 
+    border-radius: 40px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.info{
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.phone, .Email{
+    flex: 1;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 2%;
+    display: flex;
+    justify-items: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap:10%;
+    margin-left: 5%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.facebook{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.IG{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.box{
+    position: relative;
+    width: 900px; 
+    height: 600px;
+    opacity: 50%;
+    background: rgba(161, 134, 84, 0.7); 
+    border-radius: 15px; 
+    /* padding: 20px;  */
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.self{
+    position: absolute;
+    font-size: 24px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    align-content: center;
+    padding: 10px; 
+    vertical-align: top;
+    table-layout: fixed;
+}
+
+/* 讓表格內的內容靠上對齊 */
+td {
+    vertical-align: top;
+    padding: 20px; 
+}
+
+.school{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.THU,.per,.sk,.langs{
+    font-size: 30px;
+    color: rgb(36, 36, 36);
+    align-items: center;
+    margin: 10px 0 0;
+    
+}
+
+.person{
+    font-size: 40px;
+    text-align: left;
+}
+
+.skill{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.lang{
+    font-size: 40px;
+    text-align: left;
+}
+
+.line1,.line2,.line3,.line4{
+    background-color: rgb(52, 52, 52); 
+    height: 3px; 
+    border: none; 
+    width: 80%;
+    max-width: 350px; 
+}
+
+/* .test {
+    position: absolute;
+    top: 110vh; /* 讓它出現在 .top 之後 */
+    /* left: 0;
+    width: 100%;
+    padding: 20px;
+  } */
