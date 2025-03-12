@@ -14,7 +14,7 @@
     align-items: center;
     gap: 50%;
     margin: auto;
-    padding: auto;
+    padding: 6px;
 }
 
 .top{
@@ -191,11 +191,3 @@ td {
     width: 80%;
     max-width: 350px; 
 }
-
-/* .test {
-    position: absolute;
-    top: 110vh; /* 讓它出現在 .top 之後 */
-    /* left: 0;
-    width: 100%;
-    padding: 20px;
-  } */

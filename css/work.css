@@ -5,6 +5,62 @@
     overflow-x: hidden; /* 禁止左右滾動 */
 }
 
+.nav{
+    background-color: #ce3737;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
+    margin: auto;
+    padding: 6px;
+}
+
+.name{
+    font-size: 15px;
+    color:rgb(249, 238, 225); 
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 10px;
+} 
+
+.deta{
+    display: flex;
+    flex-direction: rows;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+.exp,.work{
+    font-weight: bold;
+    background-color: #ce3737;
+    color:rgb(249, 238, 225); 
+    display: inline-block;
+    flex-direction: row;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+.exp:hover,.work:hover{
+    background-color: rgb(198, 168, 181);
+    color: aliceblue;
+    border-radius: 40px;
+
+}
+
+.exp::before, .work::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
 .work1{
     margin: auto;
     padding: auto;
@@ -32,6 +88,7 @@
     font-size: 35px;
     color: rgb(161, 61, 61);
     margin-left: 1%;
+    margin-top: 2%;
 }
 
 .h2-2{
